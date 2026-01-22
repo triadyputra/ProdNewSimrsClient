@@ -25,7 +25,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/auth/auth1/login": {
+    "/forbidden": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -38,8 +38,32 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/auth/auth1/login",
-      "dataRoute": "/auth/auth1/login.rsc",
+      "srcRoute": "/forbidden",
+      "dataRoute": "/forbidden.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/auth/error": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/auth/error",
+      "dataRoute": "/auth/error.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -97,7 +121,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/auth/error": {
+    "/kasir/kasir-central": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -110,8 +134,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/auth/error",
-      "dataRoute": "/auth/error.rsc",
+      "srcRoute": "/kasir/kasir-central",
+      "dataRoute": "/kasir/kasir-central.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -121,7 +145,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/auth/auth1/register": {
+    "/auth/auth1/login": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -134,32 +158,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/auth/auth1/register",
-      "dataRoute": "/auth/auth1/register.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/master-data/group-nakes": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/master-data/group-nakes",
-      "dataRoute": "/master-data/group-nakes.rsc",
+      "srcRoute": "/auth/auth1/login",
+      "dataRoute": "/auth/auth1/login.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -193,6 +193,102 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/master-data/group-nakes": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/master-data/group-nakes",
+      "dataRoute": "/master-data/group-nakes.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/master-data/kelompok-radio": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/master-data/kelompok-radio",
+      "dataRoute": "/master-data/kelompok-radio.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/konfigurasi/group": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/konfigurasi/group",
+      "dataRoute": "/konfigurasi/group.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/master-data/panel-lab": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/master-data/panel-lab",
+      "dataRoute": "/master-data/panel-lab.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/master-data/kelompok-lab": {
       "experimentalBypassFor": [
         {
@@ -208,6 +304,30 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/master-data/kelompok-lab",
       "dataRoute": "/master-data/kelompok-lab.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/auth/auth1/register": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/auth/auth1/register",
+      "dataRoute": "/auth/auth1/register.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -265,222 +385,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/forbidden": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/forbidden",
-      "dataRoute": "/forbidden.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/master-data/perusahaan": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/master-data/perusahaan",
-      "dataRoute": "/master-data/perusahaan.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/master-data/kelompok-radio": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/master-data/kelompok-radio",
-      "dataRoute": "/master-data/kelompok-radio.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/penunjang/laboratorium": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/penunjang/laboratorium",
-      "dataRoute": "/penunjang/laboratorium.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/master-data/paket-mcu": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/master-data/paket-mcu",
-      "dataRoute": "/master-data/paket-mcu.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/master-data/panel-lab": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/master-data/panel-lab",
-      "dataRoute": "/master-data/panel-lab.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/sample-page": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/sample-page",
-      "dataRoute": "/sample-page.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/master-data/peserta": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/master-data/peserta",
-      "dataRoute": "/master-data/peserta.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/master-data/nakes": {
       "experimentalBypassFor": [
         {
@@ -529,7 +433,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/mcu/pemeriksaan-mcu": {
+    "/master-data/paket-mcu": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -542,8 +446,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/mcu/pemeriksaan-mcu",
-      "dataRoute": "/mcu/pemeriksaan-mcu.rsc",
+      "srcRoute": "/master-data/paket-mcu",
+      "dataRoute": "/master-data/paket-mcu.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -553,7 +457,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/kasir/kasir-central": {
+    "/sample-page": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -566,8 +470,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/kasir/kasir-central",
-      "dataRoute": "/kasir/kasir-central.rsc",
+      "srcRoute": "/sample-page",
+      "dataRoute": "/sample-page.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -577,7 +481,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/konfigurasi/group": {
+    "/master-data/perusahaan": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -590,8 +494,80 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/konfigurasi/group",
-      "dataRoute": "/konfigurasi/group.rsc",
+      "srcRoute": "/master-data/perusahaan",
+      "dataRoute": "/master-data/perusahaan.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/master-data/peserta": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/master-data/peserta",
+      "dataRoute": "/master-data/peserta.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/mcu/registrasi-mcu": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/mcu/registrasi-mcu",
+      "dataRoute": "/mcu/registrasi-mcu.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -625,7 +601,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/mcu/registrasi-mcu": {
+    "/mcu/pemeriksaan-mcu": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -638,8 +614,32 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/mcu/registrasi-mcu",
-      "dataRoute": "/mcu/registrasi-mcu.rsc",
+      "srcRoute": "/mcu/pemeriksaan-mcu",
+      "dataRoute": "/mcu/pemeriksaan-mcu.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/penunjang/laboratorium": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/penunjang/laboratorium",
+      "dataRoute": "/penunjang/laboratorium.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -653,8 +653,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "239a83ef8deae426a7f7d5277300442c",
-    "previewModeSigningKey": "c0c0b89a7ffe126d43ae503c7b2a0a69baa3eef1d84850a9b899453f57c8fa4e",
-    "previewModeEncryptionKey": "017474554b66890fe1925c788abcaf475baa6d53f41dd18fca622fa6abc8eeb8"
+    "previewModeId": "c2bbb7e7a6c78675d23dd46c7143fc20",
+    "previewModeSigningKey": "b3c6447a4851d77864fddcffc29b068dbd1fa79db579f870a91c231f4da3d34c",
+    "previewModeEncryptionKey": "87e6639b134ff54c92626c1958becd5a71e3bfdd7ca492d9534021263dffa660"
   }
 }
