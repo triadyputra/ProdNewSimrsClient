@@ -1,0 +1,63 @@
+{
+  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
+    "id": 90472,
+    "files": [
+      "static/chunks/472.2c08b965bd9148e2.js"
+    ]
+  },
+  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
+    "id": 99341,
+    "files": [
+      "static/chunks/9341.3ca6eb08eac1d97b.js"
+    ]
+  },
+  "app\\components\\dashboards\\modern\\Customers.tsx -> react-apexcharts": {
+    "id": 78699,
+    "files": [
+      "static/chunks/3975359d.25f6df15e94dcced.js",
+      "static/chunks/8699.653376005fc43853.js"
+    ]
+  },
+  "app\\components\\dashboards\\modern\\EmployeeSalary.tsx -> react-apexcharts": {
+    "id": 78699,
+    "files": [
+      "static/chunks/3975359d.25f6df15e94dcced.js",
+      "static/chunks/8699.653376005fc43853.js"
+    ]
+  },
+  "app\\components\\dashboards\\modern\\MonthlyEarnings.tsx -> react-apexcharts": {
+    "id": 78699,
+    "files": [
+      "static/chunks/3975359d.25f6df15e94dcced.js",
+      "static/chunks/8699.653376005fc43853.js"
+    ]
+  },
+  "app\\components\\dashboards\\modern\\Projects.tsx -> react-apexcharts": {
+    "id": 78699,
+    "files": [
+      "static/chunks/3975359d.25f6df15e94dcced.js",
+      "static/chunks/8699.653376005fc43853.js"
+    ]
+  },
+  "app\\components\\dashboards\\modern\\RevenueUpdates.tsx -> react-apexcharts": {
+    "id": 78699,
+    "files": [
+      "static/chunks/3975359d.25f6df15e94dcced.js",
+      "static/chunks/8699.653376005fc43853.js"
+    ]
+  },
+  "app\\components\\dashboards\\modern\\WeeklyStats.tsx -> react-apexcharts": {
+    "id": 78699,
+    "files": [
+      "static/chunks/3975359d.25f6df15e94dcced.js",
+      "static/chunks/8699.653376005fc43853.js"
+    ]
+  },
+  "app\\components\\dashboards\\modern\\YearlyBreakup.tsx -> react-apexcharts": {
+    "id": 78699,
+    "files": [
+      "static/chunks/3975359d.25f6df15e94dcced.js",
+      "static/chunks/8699.653376005fc43853.js"
+    ]
+  }
+}

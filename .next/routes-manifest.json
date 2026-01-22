@@ -1,0 +1,430 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/api/kasir/kasir-central/[id]",
+      "regex": "^/api/kasir/kasir\\-central/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/kasir/kasir\\-central/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/kasir/kasir-central/[id]/print",
+      "regex": "^/api/kasir/kasir\\-central/([^/]+?)/print(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/kasir/kasir\\-central/(?<nxtPid>[^/]+?)/print(?:/)?$"
+    },
+    {
+      "page": "/api/konfigurasi/akun/[id]",
+      "regex": "^/api/konfigurasi/akun/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/konfigurasi/akun/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/konfigurasi/group/[id]",
+      "regex": "^/api/konfigurasi/group/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/konfigurasi/group/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/master-data/group-nakes/[id]",
+      "regex": "^/api/master\\-data/group\\-nakes/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/master\\-data/group\\-nakes/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/master-data/kelompok-lab/[id]",
+      "regex": "^/api/master\\-data/kelompok\\-lab/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/master\\-data/kelompok\\-lab/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/master-data/kelompok-radio/[id]",
+      "regex": "^/api/master\\-data/kelompok\\-radio/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/master\\-data/kelompok\\-radio/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/master-data/nakes/[id]",
+      "regex": "^/api/master\\-data/nakes/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/master\\-data/nakes/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/master-data/paket-mcu/[id]",
+      "regex": "^/api/master\\-data/paket\\-mcu/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/master\\-data/paket\\-mcu/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/master-data/panel-lab/[id]",
+      "regex": "^/api/master\\-data/panel\\-lab/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/master\\-data/panel\\-lab/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/master-data/pemeriksaan-lab/[id]",
+      "regex": "^/api/master\\-data/pemeriksaan\\-lab/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/master\\-data/pemeriksaan\\-lab/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/master-data/pemeriksaan-radio/[id]",
+      "regex": "^/api/master\\-data/pemeriksaan\\-radio/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/master\\-data/pemeriksaan\\-radio/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/master-data/perusahaan/[id]",
+      "regex": "^/api/master\\-data/perusahaan/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/master\\-data/perusahaan/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/master-data/peserta/[id]",
+      "regex": "^/api/master\\-data/peserta/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/master\\-data/peserta/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/mcu/pemeriksaan-mcu/[id]",
+      "regex": "^/api/mcu/pemeriksaan\\-mcu/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/mcu/pemeriksaan\\-mcu/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/mcu/registrasi-mcu/[id]",
+      "regex": "^/api/mcu/registrasi\\-mcu/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/mcu/registrasi\\-mcu/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/penunjang/laboratorium/item/[id]/cancel",
+      "regex": "^/api/penunjang/laboratorium/item/([^/]+?)/cancel(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/penunjang/laboratorium/item/(?<nxtPid>[^/]+?)/cancel(?:/)?$"
+    },
+    {
+      "page": "/api/penunjang/laboratorium/item/[id]/finish",
+      "regex": "^/api/penunjang/laboratorium/item/([^/]+?)/finish(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/penunjang/laboratorium/item/(?<nxtPid>[^/]+?)/finish(?:/)?$"
+    },
+    {
+      "page": "/api/penunjang/laboratorium/item/[id]/hasil",
+      "regex": "^/api/penunjang/laboratorium/item/([^/]+?)/hasil(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/penunjang/laboratorium/item/(?<nxtPid>[^/]+?)/hasil(?:/)?$"
+    },
+    {
+      "page": "/api/penunjang/laboratorium/item/[id]/print-hasil",
+      "regex": "^/api/penunjang/laboratorium/item/([^/]+?)/print\\-hasil(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/penunjang/laboratorium/item/(?<nxtPid>[^/]+?)/print\\-hasil(?:/)?$"
+    },
+    {
+      "page": "/api/penunjang/laboratorium/item/[id]/process",
+      "regex": "^/api/penunjang/laboratorium/item/([^/]+?)/process(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/penunjang/laboratorium/item/(?<nxtPid>[^/]+?)/process(?:/)?$"
+    },
+    {
+      "page": "/api/penunjang/laboratorium/order/[id]",
+      "regex": "^/api/penunjang/laboratorium/order/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/penunjang/laboratorium/order/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/penunjang/radiologi/item/[id]/cancel",
+      "regex": "^/api/penunjang/radiologi/item/([^/]+?)/cancel(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/penunjang/radiologi/item/(?<nxtPid>[^/]+?)/cancel(?:/)?$"
+    },
+    {
+      "page": "/api/penunjang/radiologi/item/[id]/finish",
+      "regex": "^/api/penunjang/radiologi/item/([^/]+?)/finish(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/penunjang/radiologi/item/(?<nxtPid>[^/]+?)/finish(?:/)?$"
+    },
+    {
+      "page": "/api/penunjang/radiologi/item/[id]/hasil",
+      "regex": "^/api/penunjang/radiologi/item/([^/]+?)/hasil(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/penunjang/radiologi/item/(?<nxtPid>[^/]+?)/hasil(?:/)?$"
+    },
+    {
+      "page": "/api/penunjang/radiologi/item/[id]/print-hasil",
+      "regex": "^/api/penunjang/radiologi/item/([^/]+?)/print\\-hasil(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/penunjang/radiologi/item/(?<nxtPid>[^/]+?)/print\\-hasil(?:/)?$"
+    },
+    {
+      "page": "/api/penunjang/radiologi/item/[id]/process",
+      "regex": "^/api/penunjang/radiologi/item/([^/]+?)/process(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/penunjang/radiologi/item/(?<nxtPid>[^/]+?)/process(?:/)?$"
+    },
+    {
+      "page": "/api/penunjang/radiologi/order/[id]",
+      "regex": "^/api/penunjang/radiologi/order/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/penunjang/radiologi/order/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/auth/auth1/forgot-password",
+      "regex": "^/auth/auth1/forgot\\-password(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/auth1/forgot\\-password(?:/)?$"
+    },
+    {
+      "page": "/auth/auth1/login",
+      "regex": "^/auth/auth1/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/auth1/login(?:/)?$"
+    },
+    {
+      "page": "/auth/auth1/register",
+      "regex": "^/auth/auth1/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/auth1/register(?:/)?$"
+    },
+    {
+      "page": "/auth/auth1/two-steps",
+      "regex": "^/auth/auth1/two\\-steps(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/auth1/two\\-steps(?:/)?$"
+    },
+    {
+      "page": "/auth/error",
+      "regex": "^/auth/error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/error(?:/)?$"
+    },
+    {
+      "page": "/auth/maintenance",
+      "regex": "^/auth/maintenance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/maintenance(?:/)?$"
+    },
+    {
+      "page": "/dashboards/modern",
+      "regex": "^/dashboards/modern(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboards/modern(?:/)?$"
+    },
+    {
+      "page": "/forbidden",
+      "regex": "^/forbidden(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/forbidden(?:/)?$"
+    },
+    {
+      "page": "/kasir/kasir-central",
+      "regex": "^/kasir/kasir\\-central(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kasir/kasir\\-central(?:/)?$"
+    },
+    {
+      "page": "/konfigurasi/akun",
+      "regex": "^/konfigurasi/akun(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/konfigurasi/akun(?:/)?$"
+    },
+    {
+      "page": "/konfigurasi/group",
+      "regex": "^/konfigurasi/group(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/konfigurasi/group(?:/)?$"
+    },
+    {
+      "page": "/master-data/group-nakes",
+      "regex": "^/master\\-data/group\\-nakes(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/master\\-data/group\\-nakes(?:/)?$"
+    },
+    {
+      "page": "/master-data/kelompok-lab",
+      "regex": "^/master\\-data/kelompok\\-lab(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/master\\-data/kelompok\\-lab(?:/)?$"
+    },
+    {
+      "page": "/master-data/kelompok-radio",
+      "regex": "^/master\\-data/kelompok\\-radio(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/master\\-data/kelompok\\-radio(?:/)?$"
+    },
+    {
+      "page": "/master-data/nakes",
+      "regex": "^/master\\-data/nakes(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/master\\-data/nakes(?:/)?$"
+    },
+    {
+      "page": "/master-data/paket-mcu",
+      "regex": "^/master\\-data/paket\\-mcu(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/master\\-data/paket\\-mcu(?:/)?$"
+    },
+    {
+      "page": "/master-data/panel-lab",
+      "regex": "^/master\\-data/panel\\-lab(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/master\\-data/panel\\-lab(?:/)?$"
+    },
+    {
+      "page": "/master-data/pemeriksaan-lab",
+      "regex": "^/master\\-data/pemeriksaan\\-lab(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/master\\-data/pemeriksaan\\-lab(?:/)?$"
+    },
+    {
+      "page": "/master-data/pemeriksaan-radio",
+      "regex": "^/master\\-data/pemeriksaan\\-radio(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/master\\-data/pemeriksaan\\-radio(?:/)?$"
+    },
+    {
+      "page": "/master-data/perusahaan",
+      "regex": "^/master\\-data/perusahaan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/master\\-data/perusahaan(?:/)?$"
+    },
+    {
+      "page": "/master-data/peserta",
+      "regex": "^/master\\-data/peserta(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/master\\-data/peserta(?:/)?$"
+    },
+    {
+      "page": "/mcu/pemeriksaan-mcu",
+      "regex": "^/mcu/pemeriksaan\\-mcu(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/mcu/pemeriksaan\\-mcu(?:/)?$"
+    },
+    {
+      "page": "/mcu/registrasi-mcu",
+      "regex": "^/mcu/registrasi\\-mcu(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/mcu/registrasi\\-mcu(?:/)?$"
+    },
+    {
+      "page": "/penunjang/laboratorium",
+      "regex": "^/penunjang/laboratorium(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/penunjang/laboratorium(?:/)?$"
+    },
+    {
+      "page": "/penunjang/radiologi",
+      "regex": "^/penunjang/radiologi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/penunjang/radiologi(?:/)?$"
+    },
+    {
+      "page": "/sample-page",
+      "regex": "^/sample\\-page(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sample\\-page(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}
